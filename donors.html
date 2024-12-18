@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation Registration</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main class="content px-3 px-2">
+      <div class="container-fluid">
+        <div class="card mb-4">
+          <div class="card-header">
+            <h5 class="card-title">blood donation registration</h5>
+          </div>
+          <div class="card-body">
+            <form id="blood donation">
+              <div class="row g-3 mb-4">
+                <div class="col-md-4">
+                  <p>full name</p>
+                  <div class="input-group">
+                    <span class="input-group-text"><i class="fa-solid fa-user" style="color: red;"></i></span>
+                    <input type="text" class="form-control" placeholder="enter full name" required>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <p>contact number</p>
+                  <div class="input-group">
+                    <span class="input-group-text">
+   
+                      <i class="fa-solid fa-phone" style="color: red;"></i></span>
+                    <input type="text" class="form-control" placeholder="enter contact number" required>
+  
+                  </div>
+                </div>
+  
+                <div class="col-md-4">
+                  <p>blood group</p>
+                  <div class="input-group">
+                    <span class="input-group-text"><i class="fa-solid fa-droplet" style="color: red;"></i> </span>
+                    <select class="form-select" required>
+                      <option>A+</option>
+                      <option>B+</option>
+                      <option>AB+</option>
+                      <option>O+</option>
+                    </select>
+  
+                  </div>
+                </div>
+  
+              </div>
+  
+  
+  
+              <div class="row g-3 mb-4">
+                <div class="col-md-4">
+                  <p>age</p>
+                  <div class="input-group">
+                    <span class="input-group-text"><i class="fa-regular fa-calendar-days" style="color: red;"></i></span>
+                    <input type="text" class="form-control" placeholder="enter your age" required>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <p>gender</p>
+                  <div class="input-group">
+                    <span class="input-group-text">
+   
+                      <i class="fa-solid fa-person" style="color: red;"></i></span>
+                 <select id="gender" class="form-select">
+                  <option>male</option>
+                  <option>female</option>
+                 </select>
+  
+                  </div>
+                </div>
+  
+                <div class="col-md-4">
+                  <p>donation data</p>
+                  <div class="input-group">
+                    <span class="input-group-text"><i class="fa-solid fa-calendar-days" style="color: red;"></i> </span>
+                    <input type="text" class="form-control" placeholder="mm/dd/yy"  required>
+  
+                  </div>
+                </div>
+  
+              </div>
+  
+  
+              <div class="row g-3 mb-4">
+                <div class="col-md-4">
+                  <p>address</p>
+                  <div class="input-group">
+                    <span class="input-group-text"><i class="fa-solid fa-location-dot" style="color: red;"></i></span>
+                    <input type="text" class="form-control" placeholder="enter address" required>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <p>medical history</p>
+                  <div class="input-group">
+                    <span class="input-group-text">
+   
+                      <i class="fa-solid fa-notes-medical" style="color: red;"></i></span>
+                      <textarea class="form-control" placeholder="descripe medical history"></textarea>
+                    
+                  </div>
+                </div>
+  
+                <div class="col-md-4">
+                  <p>additional descripe</p>
+                  <div class="input-group">
+                    <span class="input-group-text"><i class="fa-regular fa-comment" style="color: red;"></i> </span>
+                   <textarea class="form-control" placeholder="enter additional details" required></textarea>
+  
+                  </div>
+                </div>
+  
+              </div>
+  
+  
+              <!--buttons-->
+              <div class="row g-3 mb-4">
+                <div class="col-md-3">
+                  <button type="submit" class="btn btn-success w-100" >save<i class="fa-solid fa-floppy-disk" style="color: red;"></i></button>
+                </div>
+  
+                <div class="col-md-3">
+                  <button type="submit" class="btn btn-danger w-100">delete<i class="fa-solid fa-trash" style="color: white;"></i></button>
+  
+                </div>
+                <div class="col-md-3">
+                  <button type="submit" class="btn btn-warning w-100">update<i class="fa-solid fa-pen-nib" style="color: black;"></i></button>
+                </div>
+                <div class="col-md-3">
+                  <button type="submit" class="btn btn-info w-100">search<i class="fa-solid fa-magnifying-glass" style="color: black;"></i></button>
+                </div>
+  
+                
+              </div>
+  
+            </form>
+            <div class="card">
+              <div class="card-header">
+                <h5 class="card-title">list of somali donars</h5>
+              </div>
+              <div class="card-body">
+                <table class="table table-striped">
+                  <tr>
+                    <th>#</th>
+                    <th>name</th>
+                    <th>contact</th>
+                    <th>blood group</th>
+                    <th>donation data/th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>gedi</td>
+                    <td>09020420</td>
+                    <td>A+</td>
+                    <td>12/2/2020</td>
+                  </tr>
+  
+                  <tr>
+                    <td>2</td>
+                    <td>cambaro</td>
+                    <td>0904545</td>
+                    <td>O+</td>
+                    <td>11/5/2023</td>
+                  </tr>
+  
+                  <tr>
+                    <td>3</td>
+                    <td>baydan</td>
+                    <td>0756646</td>
+                    <td>O-</td>
+                    <td>16/5/2022</td>
+                  </tr>
+  
+                  <tr>
+                    <td>4</td>
+                    <td>cabdi</td>
+                    <td>075468648</td>
+                    <td>AB</td>
+                    <td>1/3/2024</td>
+                  </tr>
+  
+                  <tr>
+                    <td>5</td>
+                    <td>jaamac</td>
+                    <td>07546856456</td>
+                    <td>D+</td>
+                    <td>23/6/2024</td>
+                  </tr>
+  
+                </table>
+              </div>
+            </div>
+  
+            
+            
+  
+            </div>
+          </div>
+  
+  
+        </div>
+      </div>
+  
+    </main>
+    
+  </body>
+  </html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Information</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main class="content px-3 px-2">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title">patient basic information</h5>
+            </div>
+            <div class="card-body">
+                <form id="patient information">
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-4">
+                            <p>first name*</p>
+                            <div class="input-group">
+                              <span class="input-group-text"><i class="fa-solid fa-user" style="color: red;"></i></span>
+                              <input type="text" class="form-control" placeholder="enter first name" required>
+                            </div>
+                          </div>
+
+                          <div class="col-md-4">
+                            <p>gender*</p>
+                            <div class="input-group">
+                              <span class="input-group-text">
+             
+                                <i class="fa-solid fa-person" style="color: red;"></i></span>
+                           <select id="gender" class="form-select">
+                            <option>male</option>
+                            <option>female</option>
+                           </select>
+            
+                            </div>
+                          </div>
+
+                          <div class="col-md-4">
+                            <p>email*</p>
+                            <div class="input-group">
+                              <span class="input-group-text"><i class="fa-solid fa-envelope" style="color:blue"></i></span>
+                              <input type="text" class="form-control" placeholder="email" required>
+             
+            
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row g-3 mb-4">
+                            <div class="col-md-4">
+                                <p>current address*</p>
+                                <div class="input-group">
+                                  <span class="input-group-text"><i class="fa-solid fa-house" style="color: blue;"></i></span>
+                                  <input type="text" class="form-control" placeholder="enter current address" required>
+                                </div>
+                              </div>
+
+                              <div class="col-md-4">
+                                <p>last name*</p>
+                                <div class="input-group">
+                                  <span class="input-group-text"><i class="fa-solid fa-user" style="color: red;"></i></span>
+                                  <input type="text" class="form-control" placeholder="enter last name" required>
+                                </div>
+                              </div>
+    
+                            
+    
+                              <div class="col-md-4">
+                                <p>age</p>
+                                <div class="input-group">
+                                  <span class="input-group-text"><i class="fa-regular fa-calendar-days" style="color: red;"></i></span>
+                                  <input type="text" class="form-control" placeholder="enter your age" required>
+                                </div>
+                              </div>
+                            </div>
+
+
+                            <div class="row g-3 mb-4">
+
+                                <div class="col-md-4">
+                                    <p>enter contact name*</p>
+                                    <div class="input-group">
+                                      <span class="input-group-text">
+                     
+                                        <i class="fa-solid fa-phone" style="color: red;"></i></span>
+                                      <input type="text" class="form-control" placeholder="enter contact number" required>
+                    
+                                    </div>
+                                  </div>
+
+                                <div class="col-md-4">
+                                    <p>photo*</p>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="fa-solid fa-camera-retro" style="color: blue;"></i></span>
+                                        <input type="file" class="form-control" required>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row g-3 mb-4">
+                                <div class="col-md-4">
+                                    <p>height*</p>
+                                    <div class="input-group">
+                                      <span class="input-group-text"><i class="fa-solid fa-up-down" style="color: blue;"></i></span>
+                                      <input type="text" class="form-control" placeholder="enter height" required>
+                                    </div>
+                                  </div>
+        
+                                  <div class="col-md-4">
+                                    <p>blood group*</p>
+                                    <div class="input-group">
+                                      <span class="input-group-text">
+                     
+                                        <i class="fa-solid fa-droplet" style="color: red;"></i></span>
+                                   <select id="blood-group" class="form-select">
+                                    <option>A+</option>
+                                    <option>B+</option>
+                                    <option>O+</option>
+                                   </select>
+                    
+                                    </div>
+                                  </div>
+        
+                                  <div class="col-md-4">
+                                    <p>pulse*</p>
+                                    <div class="input-group">
+                                      <span class="input-group-text"><i class="fa-solid fa-heart-pulse" style="color: blue;"></i></span>
+                                      <input type="text" class="form-control" placeholder="enter pulse rate" required>
+                     
+                    
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row g-3 mb-4">
+                                    <div class="col-md-4">
+                                        <p>allergy*</p>
+                                        <div class="input-group">
+                                          <span class="input-group-text"><i class="fa-solid fa-hand-dots" style="color: blue;"></i></span>
+                                          <input type="text" class="form-control" placeholder="enter allergy datails" required>
+                                        </div>
+                                      </div>
+
+                                      <div class="col-md-4">
+                                        <p>weight*</p>
+                                        <div class="input-group">
+                                          <span class="input-group-text"><i class="fa-solid fa-weight-scale" style="color: blue;"></i></span>
+                                          <input type="text" class="form-control" placeholder="enter weigth" required>
+                         
+                        
+                                        </div>
+                                      </div>
+            
+                                  
+                                      <div class="col-md-4">
+                                        <p>blood pressure*</p>
+                                        <div class="input-group">
+                                          <span class="input-group-text"><i class="fa-solid fa-droplet" style="color: blue;"></i></span>
+                                          <input type="text" class="form-control" placeholder="enter blood pressure" required>
+                         
+                        
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="row g-3 mb-4">
+                                        <div class="col-md-4">
+                                            <p>respiration*</p>
+                                            <div class="input-group">
+                                              <span class="input-group-text"><i class="fa-solid fa-lungs" style="color: blue;"></i></span>
+                                              <input type="text" class="form-control" placeholder="enter respiration rate" required>
+                                            </div>
+                                          </div>
+    
+                                          <div class="col-md-4">
+                                            <p>diet*</p>
+                                            <div class="input-group">
+                                              <span class="input-group-text"></span>
+                                              <input type="text" class="form-control" placeholder="vegeterian" required>
+                             
+                            
+                                            </div>
+                                          </div>
+                
+                                      
+                                          <div class="col-md-4">
+                                            <p>additional info*</p>
+                                            <div class="input-group">
+                                              <span class="input-group-text">
+ 
+                                               
+                                                <i class="fa-solid fa-circle-info" style="color: blue;"></i></span>
+                                              <input type="text" class="form-control" placeholder="optional" required>
+                             
+                            
+                                            </div>
+                                          </div>
+                                        </div>
+        
+    
+    
+
+
+                                 
+                      
+                                  
+                         
+                                 
+
+
+                             
+                    
+                                  
+                           
+        
+                                
+        
+    
+
+
+                            <!--buttons-->
+                            <div class="row g-3 mb-4">
+                                <div class="col-md-3">
+                                  <button type="submit" class="btn btn-success w-100">save<i class="fa-solid fa-floppy-disk" style="color: white;"></i></button>
+                
+                                </div>
+                
+                                <div class="col-md-3">
+                                  <button type="submit" class="btn btn-danger w-100">delete<i class="fa-solid fa-trash" style="color: white;"></i></button>
+                
+                                </div>
+                                <div class="col-md-3">
+                                  <button type="submit" class="btn btn-warning w-100">update<i class="fa-solid fa-pen-nib" style="color: black;"></i></button>
+                                </div>
+                
+                                <div class="col-md-3">
+                                  <button type="submit" class="btn btn-info w-100">Search<i class="fa-solid fa-magnifying-glass" style="color: black;"></i></button>
+                                </div>
+                
+                
+                                
+                    
+    
+
+             
+                          
+              
+
+                   
+                </form>
+            </div>
+        </div>
+        
+    </main>
+    
+   
+</body>
+
+</html>

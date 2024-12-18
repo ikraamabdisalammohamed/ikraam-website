@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Request</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+ 
+  
+    <main class="content px-3 px-2">
+      <div class="container-fluid ">
+        <!--doctors information-->
+        <div class="cards mb-4">
+          <div class="card-header">
+            <h5 class="card-title">blood request form</h5>
+            
+          </div>
+          <div class="card-body">
+            <form id="doctorsform">
+              <div class="row g-3 mb-4">
+              <div class="col-md-4">
+                <h5>full name</h5>
+                <div class="input-group">
+                <span class="input-group-text"><i class="fa-solid fa-user" style="color:blue"></i></span>
+                  <input type="text" class="form-control" placeholder="full name" required>
+                </div>
+  
+              </div>
+  
+              <div class="col-md-4">
+                <h5>email</h5>
+                <div class="input-group">
+                <span class="input-group-text"><i class="fa-solid fa-envelope" style="color:blue"></i></span>
+                  <input type="text" class="form-control" placeholder="enter email" required>
+                </div>
+  
+              </div>
+  
+  
+              <div class="col-md-4">
+                <h5>phone number</h5>
+                <div class="input-group">
+                <span class="input-group-text"><i class="fa-solid fa-phone" style="color: blue;"></i></span>
+                  <input type="text" class="form-control" placeholder="enter phone number" required>
+                </div>
+  
+              </div>
+              </div>
+  
+  
+              <div class="row g-3 mb-4">
+                <div class="col-md-4">
+                  <h5>region</h5>
+                  <div class="input-group">
+                  <span class="input-group-text"><i class="fa-solid fa-location-dot" style="color: blue;"></i></span>
+                    <input type="text" class="form-control" placeholder="enter region" required>
+                  </div>
+    
+                </div>
+    
+                <div class="col-md-4">
+                  <h5>town</h5>
+                  <div class="input-group">
+                  <span class="input-group-text"><i class="fa-solid fa-tower-observation" style="color: blue;"></i></span>
+                    <input type="text" class="form-control" placeholder="enter town" required>
+                  </div>
+    
+                </div>
+    
+    
+                <div class="col-md-4">
+                  <h5>village</h5>
+                  <div class="input-group">
+                  <span class="input-group-text"></span>
+                    <input type="text" class="form-control" placeholder="enter village" required>
+                  </div>
+    
+                </div>
+                </div>
+  
+                <div class="row g-3 mb-4">
+                  <div class="col-md-4">
+                    <h5>blood type</h5>
+                    <div class="input-group">
+                    <span class="input-group-text"><i class="fa-solid fa-droplet" style="color: red;"></i></span>
+                    <select class="form-select" required>
+                      <option>A+</option>
+                      <option>AB+</option>
+                      <option>O+</option>
+                      <option>AB+</option>
+                      
+  
+                      
+  
+                    </select>
+                    </div>
+      
+                  </div>
+      
+                
+      
+      
+                 
+                  <!---buttons-->
+  
+  
+                  <div class="row g-3 mb-4">
+                  <div class="col-md-3">
+                    <button type="submit" class="btn btn-success w-100">request<i class="fa-regular fa-paper-plane" style="color: white;"></i></button>
+  
+                  </div>
+  
+                  <div class="col-md-3">
+                    <button type="submit" class="btn btn-danger w-100">reset<i class="fa-solid fa-rotate-left" style="color: white;"></i></button>
+  
+                  </div>
+                  <div class="col-md-3">
+                    <button type="submit" class="btn btn-warning w-100">update<i class="fa-solid fa-pen-nib" style="color: black;"></i></button>
+                  </div>
+  
+                  <div class="col-md-3">
+                    <button type="submit" class="btn btn-info w-100">Search<i class="fa-solid fa-magnifying-glass" style="color: black;"></i></button>
+                  </div>
+  
+  
+                  </div>
+      
+                  
+      
+    
+  
+            </form>
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">list of blood request</h3>
+            </div>
+            <div class="card-body">
+              <table class="table table-striped">
+                <tr>
+                  <th>#</th>
+                  <th>name</th>
+                  <th>email</th>
+                  <th>phone</th>
+                  <th>region</th>
+                  <th>town</th>
+                  <th>village</th>
+                  <th>blood type</th>
+                  <th>status</th>
+                </tr>
+  
+                <tr>
+                  <td>1</td>
+                  <td>ali</td>
+                  <td>ali87@gmail.com</td>
+                  <td>0993547</td>
+                  <td>mudug</td>
+                  <td>galkacyo</td>
+                  <td>hawl wadaag</td>
+                  <td>A+</td>
+                  <td>accepted</td>
+                  
+  
+                </tr>
+  
+                <tr>
+                  <td>2</td>
+                  <td>ahmed</td>
+                  <td>ahmed87@gmail.com</td>
+                  <td>06783547</td>
+                  <td>bari</td>
+                  <td>bosaaso</td>
+                  <td>hilaac</td>
+                  <td>B+</td>
+                  <td>rejected</td>
+                  
+  
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>sahra</td>
+                  <td>sahra65@gmail.com</td>
+                  <td>0993809</td>
+                  <td>nugaal</td>
+                  <td>garoowe</td>
+                  <td>gambool</td>
+                  <td>O+</td>
+                  <td>waiting</td>
+                  
+  
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>ali</td>
+                  <td>ali87@gmail.com</td>
+                  <td>0993547</td>
+                  <td>mudug</td>
+                  <td>galkacyo</td>
+                  <td>hawl wadaag</td>
+                  <td>A+</td>
+                  <td>accepted</td>
+                  
+  
+                </tr>
+  
+                <tr>
+                  <td>2</td>
+                  <td>ahmed</td>
+                  <td>ahmed87@gmail.com</td>
+                  <td>06783547</td>
+                  <td>bari</td>
+                  <td>bosaaso</td>
+                  <td>hilaac</td>
+                  <td>B+</td>
+                  <td>rejected</td>
+                  
+  
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>sahra</td>
+                  <td>sahra65@gmail.com</td>
+                  <td>0993809</td>
+                  <td>nugaal</td>
+                  <td>garoowe</td>
+                  <td>gambool</td>
+                  <td>O+</td>
+                  <td>waiting</td>
+                  
+  
+                </tr>
+                
+                
+              
+               
+  
+  
+                
+  
+  
+              </table>
+            </div>
+          </div>
+  
+  
+            
+          </div>
+  
+        </div>
+      </div>
+  
+    </main>
+    
+  </body>
+  </html>
